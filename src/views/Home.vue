@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="bg" class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -16,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style>
+  #bg {
+    background: url("../assets/bg.jpg") no-repeat center top;
+    height: 100%;
+    background-size: cover;
+  }
+</style>
