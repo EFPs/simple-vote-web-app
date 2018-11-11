@@ -193,7 +193,12 @@
           this.percentB = 0
         }
       }
-
+    },
+    mounted(){
+      console.log(this.$route.params.pass)
+      if (this.$route.params.pass !== 'pass'){
+        this.$router.push('/');
+      }
     }
   }
 </script>

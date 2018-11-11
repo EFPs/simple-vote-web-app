@@ -11,6 +11,14 @@ var config = {
 };
 
 firebase.initializeApp(config);
+firebase.auth().signInAnonymously().catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log("err login ",error)
+});
 
 export default firebase
 export const db = firebase.database()
+export const auth = firebase.auth()
+
